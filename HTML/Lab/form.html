@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Information</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Blood Donation Form</legend>
+
+            <table>
+                <tr>
+                    <td><label for="firstName">First Name*:</label></td>
+                    <td><input type="text" id="firstName" name="firstName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last Name*:</label></td>
+                    <td><input type="text" id="lastName" name="lastName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="company">Company:</label></td>
+                    <td><input type="text" id="company" name="company" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address1">Address 1*:</label></td>
+                    <td><input type="text" id="address1" name="address1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address2">Address 2:</label></td>
+                    <td><input type="text" id="address2" name="address2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City*:</label></td>
+                    <td><input type="text" id="city" name="city" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State*:</label><br></td>
+                    <td><select id="state" name="state">
+                            <option value="">Select a State
+                        </Select></option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        </select>
+                    </td>
+                </tr>
+                </tr>
+                <td><label for="zipcode">Zip code*:</label></td>
+                <td><input type="text" id="zipcode" name="zipcode" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country*:</label></td>
+                    <td><select id="country" name="country">
+                            <option id="country"name="country" value="">Select a country</option>
+                            <option id="country" name="country" value="bangladesh">Bangladesh</option>
+                            <option value="india">India</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="number" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fax">Fax:</label></td>
+                    <td><input type="number" id="fax" name="fax" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email*:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Donation Amount*:</label></td>
+                    <td>
+                        <label><input type="radio" name="donationamount" value="none"> None</label>
+                        <label><input type="radio" name="donationamount" value="$5o"> $50</label>
+                        <label><input type="radio" name="donationamount" value="$75"> $75</label>
+                        <label><input type="radio" name="donationamount" value="$100"> $100</label>
+                        <label><input type="radio" name="donationamount" value="$250"> $250</label>
+                        <label><input type="radio" name="donationamount" value="other"> other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="otheramount">Other Amount $:</label></td>
+                    <td><input type="number" id="otheramount" name="otheramount" required></td>
+                </tr>
+                <tr>
+                    <td><label>Recurring Donation:</label></td>
+                    <td>
+                        <label><input type="radio" name="recurringdonation" value=""> None</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="monthlycreditcard">Monthly Credit card $</label></td>
+                    <td><input type="number" id="monthlycreditcard" name="monthlycreditcard" required></td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+
+    </form>
+
+</body>
