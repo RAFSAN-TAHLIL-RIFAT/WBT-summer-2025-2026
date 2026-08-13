@@ -1,16 +1,13 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
+/* ---------- Database connection settings ---------- */
+$dbHost = "localhost";
+$dbUser = "root";
+$dbPass = "";
+$dbName = "portfolio_db";
 
-$conn = mysqli_connect($host, $user, $pass);
-if(!$conn){
-    die("Connection failed: ". mysqli_connect_error());
-}
-echo "Connected Successfully";
+/* ---------- Connect (MySQLi, procedural) ---------- */
+$conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
 
-$conn = mysqli_connect($host, $user, $pass, "school_wbt_DB");
-if(!$conn){
-    die("Connection failed: ". mysqli_connect_error());
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-?>
